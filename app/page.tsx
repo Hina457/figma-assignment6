@@ -14,7 +14,7 @@ import Customer from "@/components/Customer/Customer"
 import Footer from "@/components/Footer/Footer"
 export default function main(){
   return(
-    <div>
+    <div className="overflow-x-hidden">
       <Header/>
       <Hero/>
       <Company/>

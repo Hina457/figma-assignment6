@@ -1,22 +1,21 @@
-
-import Image from "next/image"
-import React from "react"
+import Image from "next/image";
+import React from "react";
 import logo from "@/public/logo.svg";
-import { FaFacebookF ,FaInstagram, FaTwitter,FaLinkedin } from "react-icons/fa"
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import line3 from "@/public/Line 3.svg";
 
-import {Roboto} from 'next/font/google'
+import { Roboto } from "next/font/google";
 
-const roboto =Roboto({
-    subsets : ["latin"],
-    weight : ["400","700"],
+const roboto = Roboto({
+    subsets: ["latin"],
+    weight: ["400", "700"],
 });
-                        
-export default function Header(){
-  return(
-      <div>
-          <header className={roboto.className}>
-          <div className="w-[1280px] h-[54px]  pl-[62px] pr-[64] bg-slate-  pt-[10px] border border-[#676767]  flex gap-[25px] ">
+
+export default function Header() {
+    return (
+        <div>
+              <header className={roboto.className}>
+          <div className="w-[1280px] h-[54px]  pl-[62px] pr-[64] bg-slate-  pt-[10px] border border-[#676767] max-sm:hidden flex gap-[25px] ">
         
           <div className="w-[395px] h-[30px] gap-[8px] flex">
 
@@ -42,15 +41,15 @@ export default function Header(){
               </div>
           </div>
           </div>
-          <div className="navbar2 w-[1280px] h-[72px]  mt-[15px] border border-[#676767] bottom-[1px] pr-[64px] pl-[64px] bg-[#F7F7F7]">
+          <div className="navbar2 w-[1280px] h-[72px] max-sm:w-[428px] mt-[15px] border border-[#676767] bottom-[1px] pr-[64px] pl-[64px] bg-[#F7F7F7]">
               <div className="w-[1152px] h-[44px] justify-between bg-white mt-[10px] flex " >
-                  <div className="logo bg-[#F7F7F7] w-[270px] h-[44px]  " >
+                  <div className="logo bg-[#F7F7F7] max-sm:w-[428px] w-[270px] h-[44px]">
                      
                           <Image  className="w-[190px] "src={logo} alt="logo"/>
                       
                       </div>
                   
-                  <div className="navright flex">
+                  <div className="navright flex max-sm:hidden">
                       <ul className="flex gap-[20px] mt-[10px] text-black mr-[230px] ml-[20px] ">
                           <li>Home</li>
                           <li>Courses</li>
@@ -78,7 +77,6 @@ export default function Header(){
                   
               </div>
               </header>
-           </div>
-  
-  )
+        </div>
+    );
 }

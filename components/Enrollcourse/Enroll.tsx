@@ -1,32 +1,31 @@
-  
-import Image from "next/image"
-import design from "@/public/design.svg"
-import start1 from "@/public/Star 1.svg"
-import business from "@/public/business.svg"
-import law from "@/public/law.svg"
-import art from "@/public/art.svg"
-import programming from "@/public/programming.svg"
-import tech from "@/public/tech.svg"
+import Image from "next/image";
+import design from "@/public/design.svg";
+import start1 from "@/public/Star 1.svg";
+import business from "@/public/business.svg";
+import law from "@/public/law.svg";
+import art from "@/public/art.svg";
+import programming from "@/public/programming.svg";
+import tech from "@/public/tech.svg";
 
-  export default function Enrollcourse(){
-    return(
-        <div>
-            <div className="w-[1280px] h-[1742px] pt-[112px]  pb-[112px] gap-[60px] ">
-                <div className="w-[768px] h-[118px] gap-[6px]  mx-auto ">
-                    <h1 className="font-Roboto font-bold  text-[56px] leading-[67.2px] text-center">Courses</h1>
+export default function EnrollCourse() {
+    return (
+      <div>
+          <div className="w-[1280px] h-[1742px] pt-[112px] max-sm:w-[428px] max-sm:h-auto pb-[112px] gap-[60px] ">
+                <div className="w-[768px] max-sm:w-[249px] max-sm:h-[93px] h-[118px] gap-[6px]  mx-auto ">
+                    <h1 className="font-Roboto font-bold max-sm:text-[32px] text-[56px] leading-[67.2px] text-center">Courses</h1>
                     <p className="text-[18px] font-Roboto  leading-[27px] mt-[5] text-center">
                         Your Ultimate Guide to learning</p>
                 </div>
-                <div className="[1152px] h-[1340px] gap-[64px] mt-10 bg-[#FFFFFF]">
+                <div className="[1152px] max-sm:w-[380px] max-sm:h-auto h-[1340px] gap-[64px] mt-10 bg-[#FFFFFF]">
            
-                    <ul className="w-[336px] h-[40px] flex mx-auto">
+                    <ul className="w-[336px] h-[40px] max-sm:w-[336px] flex mx-auto">
                         <li className="w-[87px] border-b border-[#676767] pt-2 pb-2 pr-4 pl-4">popular</li>
                         <li className="w-[140px] pt-2 pb-2 pr-4 pl-4">Recommended</li>
                         <li className="w-[109] pt-2 pb-2 pr-4 pl-4">Best  Price</li>
                     </ul>
 
-                    <div className="w-[1312px] h-[534px] gap-8 flex mt-11 ">
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+                    <div className="w-[1312px] max-sm:w-[380px] max-sm:h-auto max-sm:grid grid-cols-1 h-[534px] gap-8 flex mt-11 ">
+                        <div className="w-[416px] h-[534px] max-sm:w-[380px] max-sm:h-[558px] rounded-[5px] gap-6 bg-white">
                             <Image src={design} alt="design" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">Design</p>
@@ -43,7 +42,7 @@ import tech from "@/public/tech.svg"
 
 
 
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+                        <div className="w-[416px] h-[534px] rounded-[5px] max-sm:w-[380px] max-sm:h-[558px]  gap-6 bg-white">
                             <Image src={programming} alt="" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">Programmimg</p>
@@ -61,7 +60,7 @@ import tech from "@/public/tech.svg"
 
 
 
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+                        <div className="w-[416px] h-[534px] max-sm:w-[380px] max-sm:h-[558px]  rounded-[5px] gap-6 bg-white">
                             <Image src={business} alt="" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">Business</p>
@@ -88,8 +87,8 @@ import tech from "@/public/tech.svg"
 
 
                     
-  <div className="w-[1312px] h-[534px] gap-8 flex mt-11 ">
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+  <div className="w-[1312px] h-[534px] max-sm:w-[380px] max-sm:h-auto max-sm:grid grid-cols-1 gap-8 flex mt-11 ">
+                        <div className="w-[416px] h-[534px] max-sm:w-[380px] max-sm:h-[558px] rounded-[5px] gap-6 bg-white">
                             <Image src={art} alt="" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">law</p>
@@ -106,7 +105,7 @@ import tech from "@/public/tech.svg"
 
 
 
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+                        <div className="w-[416px] h-[534px] max-sm:w-[380px] max-sm:h-[558px] rounded-[5px] gap-6 bg-white">
                             <Image src={law} alt="" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">Art</p>
@@ -124,7 +123,7 @@ import tech from "@/public/tech.svg"
 
 
 
-                        <div className="w-[416px] h-[534px] rounded-[5px] gap-6 bg-white">
+                        <div className="w-[416px] h-[534px] max-sm:w-[380px] max-sm:h-[558px] rounded-[5px] gap-6 bg-white">
                             <Image src={tech} alt="" width={416} height={300}/>
                             <div className="flex mt-5">
                                 <p className="font-[600px] text-[14px] w-[326px] h-[21px] ml-2">Tech</p>
@@ -146,15 +145,13 @@ import tech from "@/public/tech.svg"
 
 </div>
                            <div className=" flex justify-center items-center mt-24">
-                            <button className="w-[170px] h-10 border border-black rounded-[5px] pt-2 pb-2 pr-5 pl-4"> View All Courses</button>
+                            <button className="w-[170px]  max-sm:w-[152px] max-sm:h-[40px] max-sm:text-[14px] h-10 border border-black rounded-[5px] pt-2 pb-2 pr-5 pl-4"> View All Courses</button>
                         </div>
 
 </div>
 
                   
                     </div>
-               </div>
-               
-            
-    )
-  }
+        </div>
+    );
+}

@@ -11,15 +11,16 @@ import {FaLinkedin,  FaTwitter,FaDribbble}  from "react-icons/fa"
 export default function Team(){
 return(
     <div>
-        <div className="w-[1280px] h-[895px] pt-[112px] pr-[64px] pb-[112px] pl-[64px] gap-[80px] bg-[#F7F7F7]">
-  <div className="w-[768px] h-[109px] gap-[24px]  mx-auto">
-    <h2 className="font-Roboto font-bold text-4xl leading-[57.6px] text-center">Our team</h2>
-    <p className="font-Roboto font-normal leading-[27px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="w-[1280px] max-sm:w-[428px] max-sm:h-auto h-auto pt-[112px] pr-[64px] pb-[112px] pl-[64px] gap-[80px] bg-[#F7F7F7]">
+
+  <div className="w-[768px] max-sm:w-[363px] max-sm:h-auto h-[109px] gap-[24px]">
+    <h2 className="font-Roboto font-bold max-sm:text-[32px] text-4xl leading-[57.6px] text-center">Our team</h2>
+    <p className="font-Roboto max-sm:text-[18px] font-normal leading-[27px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 
 
-  <div className="w-[1280px] h-[610px] gap-[16px] mt-20 ">
-    <div className="w-[1280px] h-[273] [px] gap-12 flex">
+  <div className="w-[1280px] h-auto max-sm:[380px] gap-[16px] mt-20 ">
+    <div className="w-[1280px] h-auto  max-sm:h-auto max-sm:grid grid-cols-1  gap-12 flex">
 
     <div className="w-[394.67px] h-[273px] flex flex-col items-center">
        
@@ -91,7 +92,7 @@ return(
     {/* second row */}
     
 
-  <div className="w-[1280px] h-[273] flex gap-[48px] mt-20 ">
+  <div className="w-[1280px] h-[273]  max-sm:w-[380px] max-sm:h-auto max-sm:grid grid-cols-1 flex gap-[48px] mt-20 ">
 
   <div className="w-[394px] h-[273px]  flex flex-col items-center">
     <Image src={team4} alt="pic" width={80} height={80}/>
@@ -139,7 +140,13 @@ return(
 
   
   </div>
-        </div>
+ 
+  
+  <div className="flex justify-center items-center">
+                    <button className="font-Roboto size-[16px] leading-[24px] pt-[12px] pb-[12px] pl-[24px] pr-[24px] w-[170px] h-[48px]  rounded-[5px] border  border-black ">View All</button>
+                </div>
+                </div>
+                
     </div>
 )
 }

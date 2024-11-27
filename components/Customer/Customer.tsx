@@ -11,14 +11,14 @@ import {FaStar} from "react-icons/fa6"
 export default function Customer(){
     return(
         <div>
-       <div className="w-[1280px] h-[830.89px] pt-[112px] pr-[64px] pb-[112px] pl-[64px]
+       <div className="w-[1280px] max-sm:w-[428px] max-sm:h-auto h-[830.89px] pt-[112px] pr-[64px] pb-[112px] pl-[64px]
         gap-[80px] bg-[#F7F7F7]">
 
-            <div className="w-[560px] h-[109px] gap-[24px] ">
-                <h2 className="font-Roboto font-bold leading-[57.6px] text-3xl">Customer testimonials</h2>
-                <p className="text-normal font-normal leading-[27px]">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+            <div className="w-[560px] max-sm:w-[361px]  h-[109px] mx-auto gap-[24px] ">
+                <h2 className="font-Roboto font-bold leading-[57.6px]  text-3xl">Customer testimonials</h2>
+                <p className="text-normal font-normal max-sm:text-[14px] leading-[27px]">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
             </div>
-            <div className="w-[1152px] h-[417.89px] gap-48px  flex gap-[28px]">
+            <div className="w-[1152px] max-sm:w-[380px] max-sm:grid grid-cols-1 max-sm:h-auto  h-[417.89px]  flex gap-[28px]">
                 <div className="w-[362.67px] h-[321.89px] border p-[32px] gap-[24px] border-black">
                       <div className="w-[116px] h-[18.89px] gap-[4px] flex">
                     <FaStar/>
@@ -89,7 +89,7 @@ export default function Customer(){
                     
                 </div>
             </div>
-            <div className="w-[1152px] h-[48px] justify-between flex">
+            <div className="w-[1152px] h-[48px] max-sm:w-[380px] max-sm:h-auto justify-between flex">
                 <Image src={Dots} alt="Dots" width={72} height={8}/>
                 <Image src={arrow} alt="Arrow" width={111} height={48}/>
             </div>
